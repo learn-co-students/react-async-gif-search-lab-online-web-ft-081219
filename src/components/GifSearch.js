@@ -13,6 +13,8 @@ export default class GifSearch extends Component {
   onSearch = e => {
     e.preventDefault()
     this.props.onSearch(this.state.term)
+
+    this.setState({term: ''})
   }
 
   render() {
